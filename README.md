@@ -1,2 +1,3 @@
 # Happy New Year!
-*the program is written in Fasm under MS-DOS*
+*The program is written in Fasm under MS-DOS*
+https://www.youtube.com/watch?v=MerIzwMy6AI
