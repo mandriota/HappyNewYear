@@ -1,7 +1,7 @@
 org 100h
 
-
 ; ###CODE###
+
 ; clear screen
   mov ax,03h
   int 10h
@@ -12,7 +12,7 @@ org 100h
   int 10h
 
 ; mode 80x30
-  xor ah,ah
+  mov ah,00h
   mov al,6Ch
   int 10h
 
