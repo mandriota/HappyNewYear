@@ -1,7 +1,7 @@
 org 100h
 
-; ###CODE###
 
+; ###CODE###
 ; clear screen
   mov ax,03h
   int 10h
