@@ -12,8 +12,7 @@ org 100h
   int 10h
 
 ; mode 80x30
-  mov ah,00h
-  mov al,6Ch
+  mov ax,6Ch
   int 10h
 
 ; console output
