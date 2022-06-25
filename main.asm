@@ -7,8 +7,8 @@ org 100h
   int 10h
 
 ; hide cursor
-  mov ah,01h
   mov ch,10h
+  mov ah,01h
   int 10h
 
 ; mode 80x30
@@ -16,17 +16,16 @@ org 100h
   int 10h
 
 ; console output
-  mov ah,13h
-  mov dl,28h-len/2
-  mov dh,0Ch
+  mov dx,0C28h-len/2
   mov bl,84h
   mov cx,len
   mov bp,msg
+  mov ah,13h
   int 10h
 
 ; waiting for a key press
-  mov ah,08h
-  int 21h
+  mov ah,00h
+  int 16h
 
 ; exit
   ret
